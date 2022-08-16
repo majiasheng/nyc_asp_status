@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var aspStatus: ASPStatus = ASPStatus(aspStatus: "N/A", aspStatusDescription: "N/A")
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack(alignment: .leading) {
+            Group {
+                Text("\(aspStatus.date)")
+                Text("NYC Alternate Side Parking Status:")
+                Text("\(aspStatus.aspStatus)")
+                    .foregroundColor(aspStatus.aspStatus == "SUSPENDED" ? .red: .green)
+                    .fontWeight(.bold)
+                Text("\(aspStatus.aspStatusDescription)")
+                
+            }.task {
+                aspStatus = await getASPStatus()
+            }.padding()
+            
+        }
+        
+        
     }
 }
 

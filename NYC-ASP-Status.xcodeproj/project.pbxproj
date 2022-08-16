@@ -14,6 +14,15 @@
 		247DF4B128AACC8600A7469B /* NYC_ASP_StatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4B028AACC8600A7469B /* NYC_ASP_StatusTests.swift */; };
 		247DF4BB28AACC8700A7469B /* NYC_ASP_StatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4BA28AACC8700A7469B /* NYC_ASP_StatusUITests.swift */; };
 		247DF4BD28AACC8700A7469B /* NYC_ASP_StatusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4BC28AACC8700A7469B /* NYC_ASP_StatusUITestsLaunchTests.swift */; };
+		247DF4CA28AACCB800A7469B /* ASPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4C928AACCB800A7469B /* ASPData.swift */; };
+		247DF4D228AB2F4900A7469B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247DF4D128AB2F4900A7469B /* WidgetKit.framework */; };
+		247DF4D428AB2F4900A7469B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247DF4D328AB2F4900A7469B /* SwiftUI.framework */; };
+		247DF4D728AB2F4900A7469B /* NYCASPStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4D628AB2F4900A7469B /* NYCASPStatusWidget.swift */; };
+		247DF4DA28AB2F4B00A7469B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247DF4D928AB2F4B00A7469B /* Assets.xcassets */; };
+		247DF4DC28AB2F4B00A7469B /* NYCASPStatusWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4D828AB2F4900A7469B /* NYCASPStatusWidget.intentdefinition */; };
+		247DF4DD28AB2F4B00A7469B /* NYCASPStatusWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4D828AB2F4900A7469B /* NYCASPStatusWidget.intentdefinition */; };
+		247DF4E028AB2F4B00A7469B /* NYCASPStatusWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 247DF4CF28AB2F4900A7469B /* NYCASPStatusWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		247DF4E528AB2F5800A7469B /* ASPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DF4C928AACCB800A7469B /* ASPData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +40,28 @@
 			remoteGlobalIDString = 247DF49B28AACC8500A7469B;
 			remoteInfo = "NYC-ASP-Status";
 		};
+		247DF4DE28AB2F4B00A7469B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 247DF49428AACC8500A7469B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 247DF4CE28AB2F4900A7469B;
+			remoteInfo = NYCASPStatusWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		247DF4E428AB2F4B00A7469B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				247DF4E028AB2F4B00A7469B /* NYCASPStatusWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		247DF49C28AACC8500A7469B /* NYC-ASP-Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYC-ASP-Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +74,14 @@
 		247DF4B628AACC8600A7469B /* NYC-ASP-StatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYC-ASP-StatusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		247DF4BA28AACC8700A7469B /* NYC_ASP_StatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYC_ASP_StatusUITests.swift; sourceTree = "<group>"; };
 		247DF4BC28AACC8700A7469B /* NYC_ASP_StatusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYC_ASP_StatusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		247DF4C928AACCB800A7469B /* ASPData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASPData.swift; sourceTree = "<group>"; };
+		247DF4CF28AB2F4900A7469B /* NYCASPStatusWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NYCASPStatusWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		247DF4D128AB2F4900A7469B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		247DF4D328AB2F4900A7469B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		247DF4D628AB2F4900A7469B /* NYCASPStatusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCASPStatusWidget.swift; sourceTree = "<group>"; };
+		247DF4D828AB2F4900A7469B /* NYCASPStatusWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = NYCASPStatusWidget.intentdefinition; sourceTree = "<group>"; };
+		247DF4D928AB2F4B00A7469B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		247DF4DB28AB2F4B00A7469B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +106,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		247DF4CC28AB2F4900A7469B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247DF4D428AB2F4900A7469B /* SwiftUI.framework in Frameworks */,
+				247DF4D228AB2F4900A7469B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +124,8 @@
 				247DF49E28AACC8500A7469B /* NYC-ASP-Status */,
 				247DF4AF28AACC8600A7469B /* NYC-ASP-StatusTests */,
 				247DF4B928AACC8700A7469B /* NYC-ASP-StatusUITests */,
+				247DF4D528AB2F4900A7469B /* NYCASPStatusWidget */,
+				247DF4D028AB2F4900A7469B /* Frameworks */,
 				247DF49D28AACC8500A7469B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +136,7 @@
 				247DF49C28AACC8500A7469B /* NYC-ASP-Status.app */,
 				247DF4AC28AACC8600A7469B /* NYC-ASP-StatusTests.xctest */,
 				247DF4B628AACC8600A7469B /* NYC-ASP-StatusUITests.xctest */,
+				247DF4CF28AB2F4900A7469B /* NYCASPStatusWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +144,7 @@
 		247DF49E28AACC8500A7469B /* NYC-ASP-Status */ = {
 			isa = PBXGroup;
 			children = (
+				247DF4C928AACCB800A7469B /* ASPData.swift */,
 				247DF49F28AACC8500A7469B /* NYC_ASP_StatusApp.swift */,
 				247DF4A128AACC8500A7469B /* ContentView.swift */,
 				247DF4A328AACC8600A7469B /* Assets.xcassets */,
@@ -127,6 +178,26 @@
 			path = "NYC-ASP-StatusUITests";
 			sourceTree = "<group>";
 		};
+		247DF4D028AB2F4900A7469B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247DF4D128AB2F4900A7469B /* WidgetKit.framework */,
+				247DF4D328AB2F4900A7469B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		247DF4D528AB2F4900A7469B /* NYCASPStatusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				247DF4D628AB2F4900A7469B /* NYCASPStatusWidget.swift */,
+				247DF4D828AB2F4900A7469B /* NYCASPStatusWidget.intentdefinition */,
+				247DF4D928AB2F4B00A7469B /* Assets.xcassets */,
+				247DF4DB28AB2F4B00A7469B /* Info.plist */,
+			);
+			path = NYCASPStatusWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +208,12 @@
 				247DF49828AACC8500A7469B /* Sources */,
 				247DF49928AACC8500A7469B /* Frameworks */,
 				247DF49A28AACC8500A7469B /* Resources */,
+				247DF4E428AB2F4B00A7469B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				247DF4DF28AB2F4B00A7469B /* PBXTargetDependency */,
 			);
 			name = "NYC-ASP-Status";
 			productName = "NYC-ASP-Status";
@@ -183,6 +256,23 @@
 			productReference = 247DF4B628AACC8600A7469B /* NYC-ASP-StatusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		247DF4CE28AB2F4900A7469B /* NYCASPStatusWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247DF4E128AB2F4B00A7469B /* Build configuration list for PBXNativeTarget "NYCASPStatusWidgetExtension" */;
+			buildPhases = (
+				247DF4CB28AB2F4900A7469B /* Sources */,
+				247DF4CC28AB2F4900A7469B /* Frameworks */,
+				247DF4CD28AB2F4900A7469B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYCASPStatusWidgetExtension;
+			productName = NYCASPStatusWidgetExtension;
+			productReference = 247DF4CF28AB2F4900A7469B /* NYCASPStatusWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +294,9 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 247DF49B28AACC8500A7469B;
 					};
+					247DF4CE28AB2F4900A7469B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 247DF49728AACC8500A7469B /* Build configuration list for PBXProject "NYC-ASP-Status" */;
@@ -222,6 +315,7 @@
 				247DF49B28AACC8500A7469B /* NYC-ASP-Status */,
 				247DF4AB28AACC8600A7469B /* NYC-ASP-StatusTests */,
 				247DF4B528AACC8600A7469B /* NYC-ASP-StatusUITests */,
+				247DF4CE28AB2F4900A7469B /* NYCASPStatusWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +344,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		247DF4CD28AB2F4900A7469B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247DF4DA28AB2F4B00A7469B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				247DF4A228AACC8500A7469B /* ContentView.swift in Sources */,
+				247DF4CA28AACCB800A7469B /* ASPData.swift in Sources */,
+				247DF4DD28AB2F4B00A7469B /* NYCASPStatusWidget.intentdefinition in Sources */,
 				247DF4A028AACC8500A7469B /* NYC_ASP_StatusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +383,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		247DF4CB28AB2F4900A7469B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247DF4DC28AB2F4B00A7469B /* NYCASPStatusWidget.intentdefinition in Sources */,
+				247DF4E528AB2F5800A7469B /* ASPData.swift in Sources */,
+				247DF4D728AB2F4900A7469B /* NYCASPStatusWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = 247DF49B28AACC8500A7469B /* NYC-ASP-Status */;
 			targetProxy = 247DF4B728AACC8600A7469B /* PBXContainerItemProxy */;
+		};
+		247DF4DF28AB2F4B00A7469B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 247DF4CE28AB2F4900A7469B /* NYCASPStatusWidgetExtension */;
+			targetProxy = 247DF4DE28AB2F4B00A7469B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +531,7 @@
 		247DF4C128AACC8700A7469B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +560,7 @@
 		247DF4C228AACC8700A7469B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +658,58 @@
 			};
 			name = Release;
 		};
+		247DF4E228AB2F4B00A7469B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NYCASPStatusWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NYCASPStatusWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.mjs.NYC-ASP-Status.NYCASPStatusWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		247DF4E328AB2F4B00A7469B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NYCASPStatusWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NYCASPStatusWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.mjs.NYC-ASP-Status.NYCASPStatusWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +745,15 @@
 			buildConfigurations = (
 				247DF4C728AACC8700A7469B /* Debug */,
 				247DF4C828AACC8700A7469B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		247DF4E128AB2F4B00A7469B /* Build configuration list for PBXNativeTarget "NYCASPStatusWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247DF4E228AB2F4B00A7469B /* Debug */,
+				247DF4E328AB2F4B00A7469B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

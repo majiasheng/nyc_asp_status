@@ -30,7 +30,7 @@ struct Provider: IntentTimelineProvider {
             
             var entries: [SimpleEntry] = []
             let currentDate = Date()
-            let nextUpdateDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
+            let nextUpdateDate = Calendar.current.date(byAdding: .hour, value: 2, to: currentDate)!
             let entry = SimpleEntry(date: currentDate, aspStatus: aspStatus)
             entries.append(entry)
             
